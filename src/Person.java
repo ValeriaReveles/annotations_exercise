@@ -1,7 +1,7 @@
 /**
  * This source file is subject to the license that is bundled with this package in the file LICENSE.
  */
-@SuppressWarnings("all")
+
 
 public abstract class Person {
     protected String firstName;
@@ -10,11 +10,6 @@ public abstract class Person {
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-    }
-
-    public String fullName() {
-
-        return String.format("%s %s", firstName, lastName);
     }
 
 }

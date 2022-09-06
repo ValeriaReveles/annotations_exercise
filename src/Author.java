@@ -3,19 +3,20 @@
  */
 import java.util.ArrayList;
 import java.util.List;
-@SuppressWarnings("all")
+
 
 public class Author extends Person {
-    private List books;
+    private final List<String> books;
 
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
-        books = new ArrayList();
+        books = new ArrayList<>();
     }
 
     /**
-     * @deprecated Use publishedBooks instead
+//   * @deprecated Use publishedBooks instead
      */
+
     @Deprecated
     public List<String> getBooks() {
 
@@ -32,8 +33,5 @@ public class Author extends Person {
         books.add(book);
     }
 
-    @Override
-    public String fullName() {
-        return String.format("%s, %s", lastName, firstName);
-    }
+
 }
